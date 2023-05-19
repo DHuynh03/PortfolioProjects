@@ -90,9 +90,9 @@ Select OwnerAddress
 From PortfolioProject..NashvilleHousing
 
 Select
-PARSENAME(Replace(OwnerAddress, ',', '.') , 3) as StAddress
-,PARSENAME(Replace(OwnerAddress, ',', '.') , 2) as City
-,PARSENAME(Replace(OwnerAddress, ',', '.') , 1) as 
+PARSENAME(Replace(OwnerAddress, ',', '.') , 3)
+,PARSENAME(Replace(OwnerAddress, ',', '.') , 2) 
+,PARSENAME(Replace(OwnerAddress, ',', '.') , 1) 
 From PortfolioProject..NashvilleHousing
 
 
@@ -189,4 +189,3 @@ Alter Table PortfolioProject..NashvilleHousing
 Drop Column SaleDate
 
 
-Purpose of cleaning data is to eliminate errors, redundancy, increase data reliability, deliver accuracy, ensure consistency, and assure completeness
